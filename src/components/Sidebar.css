@@ -1,0 +1,90 @@
+.sidebar {
+  width: 250px;
+  padding: 20px;
+}
+
+.logo img {
+  margin-bottom: 20px;
+  width: 120px;
+  height: auto;
+  padding-left: 28%;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li img {
+  width: 12%;
+  align-items: center;
+  padding-top: 0%;
+}
+
+.menu ul li {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  color: rgb(102, 151, 193);
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.justice-banner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.justice-banner img {
+  width: 75%;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px; /* Decrease sidebar width on smaller screens */
+      padding: 15px;
+  }
+
+  .logo img {
+      width: 100px; /* Adjust logo size */
+      padding-left: 10%; /* Adjust padding */
+  }
+
+  .menu ul li {
+      font-size: small; /* Decrease font size */
+  }
+
+  .menu ul li img {
+      width: 15%; /* Adjust image size in menu */
+  }
+
+  .justice-banner img {
+      width: 85%; /* Adjust banner size */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+      width: 100%; /* Full width on very small screens */
+      padding: 10px;
+  }
+
+  .logo img {
+      width: 80px; /* Smaller logo on very small screens */
+      padding-left: 5%; /* Adjust logo padding */
+  }
+
+  .menu ul li {
+      font-size: smaller; /* Further decrease font size */
+  }
+
+  .menu ul li img {
+      width: 20%; /* Adjust image size in menu */
+  }
+
+  .justice-banner img {
+      width: 90%; /* Adjust banner size */
+  }
+}

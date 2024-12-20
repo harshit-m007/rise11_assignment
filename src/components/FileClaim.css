@@ -1,0 +1,139 @@
+.file-claim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6ff;
+    padding-top: 3%;
+    border-radius: 20px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.icon {
+    font-size: 24px;
+    color: #f5f1f1;
+}
+
+.icon.completed {
+    color: #c3c5c8;
+}
+
+.icon.active {
+    color: transparent;
+    stroke: #0b76e7;
+    stroke-width: 20px;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+
+.label.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.line {
+    height: 2px;
+    width: 70px;
+    background-color: transparent;
+    transform: translateY(-8px);
+}
+
+.solid-line {
+    background-color: #007bff;
+}
+
+.dotted-line {
+    border-top: 2px dotted #007bff;
+}
+
+.form-sections {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+@media (max-width: 823px) {
+    .file-claim {
+        padding-top: 5%;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .step {
+        margin: 0 0 15px 0;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    .line {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .file-claim {
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .step {
+        margin: 0 0 10px 0;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .line {
+        width: 40px;
+    }
+}
